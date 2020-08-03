@@ -1,0 +1,21 @@
+<h1>
+    Usuarios:
+</h1>
+<hr>
+
+<ul class="list-group">
+    <li 
+        class="list-group-item"
+        *ngFor="let user of usersOnline"
+    >
+        {{user.userName}}
+        <span class="badge badge-primary">
+            {{user.id}}
+        </span>
+        <br>
+        <span class="badge badge-info"> 
+            {{user.room}}
+        </span>
+    </li>
+</ul>
+
